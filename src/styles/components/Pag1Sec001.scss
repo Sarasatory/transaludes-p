@@ -1,0 +1,133 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.p1s1 {
+  position: relative;
+  width: 100%;
+  padding: 40rem 32rem;
+
+  @include flexCenteredColum();
+
+  &__little-container {
+    @include flexCenteredColum();
+    gap: 20rem;
+
+    @media (min-width: $break-point-desktop) {
+      width: 68%;
+      padding: 100rem 0;
+    }
+  }
+
+  @media (min-width: $break-point-desktop) {
+    &__bg-img {
+      position: absolute;
+
+      &--001 {
+        width: 72rem;
+        height: 65rem;
+
+        top: 38rem;
+        right: 29%;
+
+        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--002 {
+        width: 73rem;
+        height: 81rem;
+
+        top: 72rem;
+        right: 18%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--003 {
+        width: 98rem;
+        height: 74rem;
+
+        top: 156rem;
+        right: 7%;
+        background: url(../../assets/images/p1s1/avatar001.svg) no-repeat center
+          center / contain;
+      }
+
+      &--004 {
+        width: 62rem;
+        height: 79rem;
+
+        top: 244rem;
+        right: 6%;
+
+        background: url(../../assets/images/p1s1/bubble001.svg) no-repeat center
+          center / contain;
+      }
+
+      &--005 {
+        width: 119rem;
+        height: 128rem;
+
+        top: 340rem;
+        right: 10%;
+        background: url(../../assets/images/p1s1/avatar002.svg) no-repeat center
+          center / contain;
+      }
+
+      &--006 {
+        width: 119rem;
+        height: 165rem;
+
+        top: 312rem;
+        left: 10%;
+        background: url(../../assets/images/p1s1/avatar003.svg) no-repeat center
+          center / contain;
+      }
+
+      &--007 {
+        width: 57rem;
+        height: 70rem;
+
+        top: 244rem;
+        left: 7%;
+
+        background: url(../../assets/images/p1s1/bubble002.svg) no-repeat center
+          center / contain;
+      }
+
+      &--008 {
+        width: 92rem;
+        height: 69rem;
+
+        top: 148rem;
+        left: 7%;
+        background: url(../../assets/images/p1s1/avatar004.svg) no-repeat center
+          center / contain;
+      }
+
+      &--009 {
+        width: 81rem;
+        height: 75rem;
+
+        top: 75rem;
+        left: 18%;
+        background: url(../../assets/images/p1s1/avatar005.svg) no-repeat center
+          center / contain;
+      }
+
+      &--010 {
+        width: 72rem;
+        height: 65rem;
+
+        top: 38rem;
+        left: 29%;
+
+        background: url(../../assets/images/p1s1/bubble003.svg) no-repeat center
+          center / contain;
+      }
+    }
+  }
+
+  @media (min-width: $break-point-tablet) {
+  }
+}

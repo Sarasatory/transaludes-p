@@ -1,0 +1,210 @@
+//
+// TEXTOS
+//
+
+@font-face {
+  font-family: 'urbanist';
+  src: url('../../fonts/Urbanist.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'red-hat-display';
+  src: url('../../fonts/RedHatDisplay.ttf') format('truetype');
+}
+
+.text-gradient-action-blue {
+  background-clip: text;
+  background-image: $gradient-action-blue;
+  color: transparent;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.text-h1 {
+  font-family: $font-family-urbanist;
+  font-weight: $font-w-medium;
+
+  font-size: 40rem;
+  letter-spacing: 0.4rem;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+    font-size: 70rem;
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h2 {
+  font-family: $font-family-urbanist;
+  font-weight: $font-w-medium;
+
+  font-size: 30rem;
+  letter-spacing: 0;
+  line-height: 40rem;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+    font-size: 40rem;
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h3-medium {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-medium;
+
+  font-size: 22rem;
+  letter-spacing: 0;
+  line-height: 36rem;
+  color: $col-text-strong;
+  @media (min-width: $break-point-mobile) {
+    font-size: 26rem;
+  }
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h3-regular {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 26rem;
+  letter-spacing: 0;
+  line-height: 36rem;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h4-medium {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-medium;
+
+  font-size: 20rem;
+  letter-spacing: 0;
+  line-height: 28rem;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h4-regular {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 20rem;
+  letter-spacing: 0;
+  line-height: 28rem;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-p1-medium {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-medium;
+
+  font-size: 18rem;
+  letter-spacing: 0;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+
+  &--cookies {
+    font-size: 24rem;
+  }
+}
+
+.text-p1-regular {
+  font-family: $font-family-red-hat-display;
+  font-weight: 400;
+  font-size: 18rem;
+  letter-spacing: 0;
+  line-height: 27rem;
+  color: $col-text-strong;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+
+  &--cookies {
+    font-size: 32rem;
+  }
+}
+
+.text-p2 {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 17rem;
+  letter-spacing: 0;
+  line-height: 23rem; /// Satory
+  color: $col-text-body;
+  @media (min-width: $break_point_tablet) {
+    font-size: 18rem;
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-p3 {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 13rem;
+  letter-spacing: 0;
+  color: $col-text-body;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-btn {
+  font-family: $font-family-urbanist;
+  font-weight: $font-w-bold;
+
+  font-size: 16rem;
+  letter-spacing: 0;
+  line-height: 45rem;
+  color: $col-white;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-label {
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-semibold;
+
+  font-size: 18rem;
+  letter-spacing: 1.5rem;
+  line-height: 18rem;
+  text-transform: uppercase;
+  color: $col-main-pink;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}

@@ -1,0 +1,22 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.lpc {
+  width: 100%;
+  min-height: calc(100vh - 487rem);
+  margin-top: $nav-height-mobile;
+  padding: 40rem 32rem;
+
+  @include flexCenteredColum;
+
+  overflow-wrap: break-word;
+  hyphens: auto;
+
+  @media (min-width: $break-point-desktop) {
+    margin-top: $nav-height-tablet-desktop;
+  }
+
+  .max-container {
+    gap: 20rem;
+  }
+}

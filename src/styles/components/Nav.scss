@@ -1,0 +1,193 @@
+@import '../core/Variables.scss';
+
+.section-nav {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $col-white-90;
+  backdrop-filter: blur(10rem);
+  box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-mobile {
+  width: 100%;
+  height: $nav-height-mobile;
+  min-height: $nav-height-mobile;
+  padding: 0 24rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $break-point-desktop) {
+    display: none;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $break-point-desktop) {
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__icon-bars {
+    width: 40rem;
+    height: 40rem;
+
+    background: url(../../assets/icons/menuBars.svg) no-repeat center center /
+      cover;
+
+    &:hover {
+      cursor: pointer;
+
+      background: url(../../assets/icons/menuBarsHover.svg) no-repeat center
+        center / cover;
+    }
+  }
+}
+
+.nav {
+  z-index: 200;
+
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 24rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32rem;
+
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    gap: 0;
+  }
+
+  @media (min-width: $break-point-desktop) {
+    height: $nav-height-tablet-desktop;
+    min-height: $nav-height-tablet-desktop;
+    padding: 0 24rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon-close {
+    position: absolute;
+    top: 24rem;
+    right: 24rem;
+
+    width: 40rem;
+    height: 40rem;
+
+    background: url(../../assets/icons/menuClose.svg) no-repeat center center /
+      cover;
+
+    &:hover {
+      cursor: pointer;
+
+      background: url(../../assets/icons/menuCloseHover.svg) no-repeat center
+        center / cover;
+    }
+
+    @media (min-width: $break-point-desktop) {
+      display: none;
+    }
+  }
+
+  &__logo-rectangle {
+    margin: 100rem 0 60rem 0;
+
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      position: absolute;
+      top: 24rem;
+      left: 24rem;
+      margin: 0;
+    }
+
+    @media (min-width: $break-point-desktop) {
+      margin: 0;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    margin-bottom: 80rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
+
+    color: $col-text-body;
+    & li:hover {
+      color: $col-main-blue;
+    }
+
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      gap: 0;
+      margin: 20rem 0;
+    }
+
+    @media (min-width: $break-point-desktop) {
+      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 22rem;
+    }
+  }
+
+  &.closed {
+    display: none;
+
+    @media (min-width: $break-point-desktop) {
+      display: flex;
+    }
+  }
+
+  &.open {
+    display: flex;
+  }
+
+  .selected {
+    padding: 0 5rem 18rem 5rem;
+
+    font-weight: $font-w-medium;
+    color: $col-main-blue;
+
+    background: $gradient-action-blue;
+    background-repeat: no-repeat;
+    background-size: 100% 3rem;
+    background-position: center 90%;
+
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      background-position: center 65%;
+    }
+
+    @media (min-width: $break-point-desktop) {
+      padding: 18rem 5rem;
+    }
+  }
+
+  .no-selected {
+    padding: 0 5rem 18rem 5rem;
+
+    @media (min-width: $break-point-desktop) {
+      padding: 18rem 5rem;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../core/Variables.scss';
+
+.logo-square {
+  width: 140rem;
+  height: 140rem;
+
+  display: inline-block;
+
+  background: url(../../assets/logos/logo-square.svg) no-repeat center center /
+    contain;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../core/Variables.scss';
+
+.logo-rectangle {
+  width: 180rem;
+  height: 54rem;
+
+  display: inline-block;
+
+  background: url(../../assets/logos/logo-rectangle.svg) no-repeat center center /
+    contain;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

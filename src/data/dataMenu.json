@@ -1,0 +1,20 @@
+{
+  "menu": [
+    {
+      "text": "Estudio transaludes",
+      "route": "/"
+    },
+    {
+      "text": "Equipo",
+      "route": "/Page1"
+    },
+    {
+      "text": "Preguntas frecuentes",
+      "route": "/Page2"
+    },
+    {
+      "text": "Contacto",
+      "route": "/Page3"
+    }
+  ]
+}
